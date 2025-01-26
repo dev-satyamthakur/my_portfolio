@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satyam Thakur - Software Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+      }
+      .card:hover {
+        transform: scale(1.025);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+      .section-title {
+        position: relative;
+        padding-bottom: 10px;
+      }
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.8s ease-out forwards;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+      <header class="text-center mb-16 animate-fade-in">
+        <h1 class="text-5xl font-bold mb-4 gradient-text">Satyam Thakur</h1>
+        <div class="flex justify-center space-x-4 text-gray-400">
+          <a
+            href="mailto:sat.thakur20@gmail.com"
+            class="hover:text-white transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 inline-block mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="{2}"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            sat.thakur20@gmail.com
+          </a>
+          <a
+            href="https://linkedin.com/in/dev-satyamthakur"
+            target="_blank"
+            class="hover:text-white transition"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/dev-satyamthakur"
+            target="_blank"
+            class="hover:text-white transition"
+            >GitHub</a
+          >
+        </div>
+      </header>
+
+      <section id="work-experience" class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 section-title animate-fade-in">
+          Work Experience
+        </h2>
+        <div class="space-y-6">
+          <div class="card p-6 rounded-lg animate-fade-in">
+            <h3 class="text-xl font-bold mb-2 gradient-text">
+              Amazon Hyderabad, India
+            </h3>
+            <p class="text-gray-300 mb-2">
+              SDE Intern — React, TypeScript, NodeJS, Spring Boot, Java, Maven,
+              Docker, AWS
+            </p>
+            <p class="text-gray-500 mb-4">JUL 2024 - DEC 2024</p>
+            <ul class="list-disc list-inside text-gray-400 space-y-2">
+              <li>
+                Engineered an LLM-powered AI ChatBot during global hackathon,
+                integrating Speech-to-Text and Text-to-Speech functionality
+                through AWS services.
+              </li>
+              <li>
+                Architected automated test suite using BDD and NightwatchJS,
+                reducing testing time by 65% and deployment cycles by 30%.
+              </li>
+            </ul>
+          </div>
+          <div class="card p-6 rounded-lg animate-fade-in">
+            <h3 class="text-xl font-bold mb-2 gradient-text">
+              Google Developer Student Club
+            </h3>
+            <p class="text-gray-300 mb-2">
+              Android Domain Lead - Android SDK, Kotlin, Java, XML, Jetpack
+              Compose
+            </p>
+            <p class="text-gray-500 mb-4">AUG 2023 - JUN 2024</p>
+            <ul class="list-disc list-inside text-gray-400 space-y-2">
+              <li>
+                Spearheaded development of 3 Android projects, managing team of
+                10+ members.
+              </li>
+              <li>
+                Orchestrated 5 hands-on Android workshops, increasing
+                participant technical proficiency by 40%.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 section-title animate-fade-in">
+          Projects
+        </h2>
+        <div class="space-y-6">
+          <div class="card p-6 rounded-lg animate-fade-in">
+            <h3 class="text-xl font-bold mb-2 gradient-text">
+              Quotation
+              <a
+                href="https://bit.ly/3PFDKLU"
+                target="_blank"
+                class="text-sm ml-2 text-blue-400"
+                >Play Store</a
+              >
+            </h3>
+            <p class="text-gray-500 mb-4">JUN 2023</p>
+            <ul class="list-disc list-inside text-gray-400 space-y-2">
+              <li>
+                Developed and launched Quotation app on Play Store with
+                efficient REST API integration.
+              </li>
+              <li>
+                Achieved 100+ downloads and 4.5+ star rating with optimized API
+                communication.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 section-title animate-fade-in">
+          Technical Skills
+        </h2>
+        <div class="grid grid-cols-2 gap-4 animate-fade-in">
+          <div class="card p-4 rounded-lg">
+            <h4 class="font-semibold mb-2 gradient-text">
+              Programming Languages
+            </h4>
+            <p class="text-gray-400">
+              C/C++, Java, Kotlin, JavaScript, TypeScript, Python
+            </p>
+          </div>
+          <div class="card p-4 rounded-lg">
+            <h4 class="font-semibold mb-2 gradient-text">Tools & Frameworks</h4>
+            <p class="text-gray-400">
+              React, Spring Boot, Android, Git, AWS, VS Code
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6 section-title animate-fade-in">
+          Education
+        </h2>
+        <div class="card p-6 rounded-lg animate-fade-in">
+          <h3 class="text-xl font-bold mb-2 gradient-text">
+            Lovely Professional University
+          </h3>
+          <p class="text-gray-300">
+            Bachelor of Technology in Computer Science & Engineering
+          </p>
+          <p class="text-gray-500">9.25 CGPA • Graduating JUL 2025</p>
+        </div>
+      </section>
+
+      <section id="achievements">
+        <h2 class="text-3xl font-semibold mb-6 section-title animate-fade-in">
+          Achievements
+        </h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="card p-4 rounded-lg animate-fade-in">
+            <h4 class="font-semibold gradient-text">LeetCode Milestones</h4>
+            <p class="text-gray-400">20 Badges • 800+ DSA Problems</p>
+          </div>
+          <div class="card p-4 rounded-lg animate-fade-in">
+            <h4 class="font-semibold gradient-text">Open Source</h4>
+            <p class="text-gray-400">1100+ GitHub Contributions</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
